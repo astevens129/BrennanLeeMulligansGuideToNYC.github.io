@@ -1,4 +1,6 @@
-This is my guide to NYC based on Brennan Lee Mulligan
+<!-- Brennan's Guide to NYC
+  A simple, responsive HTML/CSS guide inspired by Brennan Lee Mulligan.
+  Features a sticky header, dropdown menu, and sections for various content.-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -23,13 +25,14 @@ This is my guide to NYC based on Brennan Lee Mulligan
     }
 
     body {
-      background-color: var(--white);
+      background: url('https://media.timeout.com/images/106223325/750/422/image.jpg') no-repeat center center fixed;
+      background-size: cover;
       color: var(--dark);
       line-height: 1.6;
     }
 
     header {
-      background-color: var(--dusty-blue);
+      background-color: rgba(92, 106, 154, 0.9);
       color: var(--white);
       padding: 1rem;
       position: sticky;
@@ -95,6 +98,9 @@ This is my guide to NYC based on Brennan Lee Mulligan
 
     section {
       padding: 4rem 2rem;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 2rem;
+      border-radius: 10px;
     }
 
     h2 {
@@ -119,7 +125,7 @@ This is my guide to NYC based on Brennan Lee Mulligan
 <body>
   <header>
     <nav>
-      <div class="logo">Brennan's Guide</div>
+      <div class="logo">The Brennan Lee Mulligan Approved Guide to NYC</div>
       <div class="menu">
         <a href="#home">Home</a>
         <div class="dropdown">
@@ -140,7 +146,7 @@ This is my guide to NYC based on Brennan Lee Mulligan
 
   <section id="home">
     <h2>The Brennan Lee Mulligan Guide To New York City</h2>
-    <p>Welcome to the ultimate Brennan-approved guide to the Big Apple! Explore sites, food, haunts, and personal favorites from the world of Brennan Lee Mulligan.</p>
+    <p>Welcome to the ultimate BLeem Approved guide to the Big Apple! Explore sites, food, haunts, and personal favorites from the world of Brennan Lee Mulligan.</p>
   </section>
 
   <section id="sites">
@@ -176,10 +182,10 @@ This is my guide to NYC based on Brennan Lee Mulligan
   <section id="find">
     <h2>Where to Find Brennan</h2>
     <ul>
-      <li><a href="#">Patreon</a></li>
-      <li><a href="#">Spotify</a></li>
-      <li><a href="#">Dropout</a></li>
-      <li><a href="#">Instagram</a></li>
+      <li><a href="https://www.patreon.com/worldsbeyondnumber">Worlds Beyond Number Patreon</a></li>
+      <li><a href="https://open.spotify.com/show/4xQ4HKZjIg04Phtj2gaTbi">Worlds Beyond Number on Spotify</a></li>
+      <li><a href="https://signup.dropout.tv/">Find Brennan on Dropout.tv</a></li>
+      <li><a href="https://www.instagram.com/brennanleemulligan/?hl=en">Brennan's Instagram</a></li>
     </ul>
   </section>
 
@@ -188,4 +194,6 @@ This is my guide to NYC based on Brennan Lee Mulligan
   </script>
 </body>
 </html>
+
+
 
