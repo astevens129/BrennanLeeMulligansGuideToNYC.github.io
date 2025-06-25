@@ -1,1 +1,191 @@
-This is my non-profit page
+This is my guide to NYC based on Brennan Lee Mulligan
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brennan's Guide to NYC</title>
+  <style>
+    :root {
+      --dark: #23171F;
+      --blue: #9bb8e7;
+      --light: #e5e1e2;
+      --dusty-blue: #5c6a9a;
+      --rose: #8d6d6e;
+      --white: #ffffff;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: var(--white);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+
+    header {
+      background-color: var(--dusty-blue);
+      color: var(--white);
+      padding: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+    }
+
+    .menu {
+      display: none;
+      flex-direction: column;
+    }
+
+    .menu a {
+      color: var(--white);
+      text-decoration: none;
+      margin: 0.5rem 0;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: var(--blue);
+    }
+
+    .dropdown {
+      position: relative;
+    }
+
+    .dropdown-btn {
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: var(--dusty-blue);
+      top: 100%;
+      left: 0;
+      flex-direction: column;
+    }
+
+    .dropdown-content a {
+      padding: 0.5rem 1rem;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: flex;
+    }
+
+    section {
+      padding: 4rem 2rem;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: var(--dusty-blue);
+    }
+
+    @media (min-width: 768px) {
+      .menu {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+      }
+
+      .dropdown-content {
+        position: absolute;
+        top: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Brennan's Guide</div>
+      <div class="menu">
+        <a href="#home">Home</a>
+        <div class="dropdown">
+          <button class="dropdown-btn">Explore ▾</button>
+          <div class="dropdown-content">
+            <a href="#sites">Sites to See</a>
+            <a href="#food">Food to Eat</a>
+            <a href="#haunts">Old Haunts</a>
+            <a href="#sources">Sources</a>
+            <a href="#approved">Brennan-Approved</a>
+            <a href="#quotes">Quotes</a>
+            <a href="#find">Where to Find</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="home">
+    <h2>The Brennan Lee Mulligan Guide To New York City</h2>
+    <p>Welcome to the ultimate Brennan-approved guide to the Big Apple! Explore sites, food, haunts, and personal favorites from the world of Brennan Lee Mulligan.</p>
+  </section>
+
+  <section id="sites">
+    <h2>Sites to See</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="food">
+    <h2>Food to Eat</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="haunts">
+    <h2>Brennan’s Old Haunts</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="sources">
+    <h2>Sources of Information</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="approved">
+    <h2>Brennan-Approved Spots</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="quotes">
+    <h2>Quotes by Brennan</h2>
+    <p>[Add content here]</p>
+  </section>
+
+  <section id="find">
+    <h2>Where to Find Brennan</h2>
+    <ul>
+      <li><a href="#">Patreon</a></li>
+      <li><a href="#">Spotify</a></li>
+      <li><a href="#">Dropout</a></li>
+      <li><a href="#">Instagram</a></li>
+    </ul>
+  </section>
+
+  <script>
+    // Optional: Add JS for toggling mobile menu or additional interactivity later
+  </script>
+</body>
+</html>
+
